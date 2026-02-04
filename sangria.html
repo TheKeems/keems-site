@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>So you want to really see?</title>
+    <link rel="icon" href="bob.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">Projects</a></li>
+        <li><a href="contact.html">PLACEHOLDER</a></li>
+        <li><a href="sangria.html">👁️</a></li>
+    </ul>
+  </nav>
+  <body>
+    <h1>TheKeems's Page</h1>
+    <p class="sangrara">If you don't know what's next, then you shouldn't be here.</p>
+    <div id="passcodeForm" class = "center">
+        <pspt for="passcodeBox">Enter Passcode:</pspt>
+        <input type="password" id="passcodeBox" />
+        <button onclick="checkPasscode()">Submit</button>
+    </div>
+
+    <div id="content" style="display: none;">
+        <h1>Welcome! You have accessed the protected content.</h1>
+        <p>This information is super secret!</p>
+    </div>
+  </body>
+</html>
+<script type="text/javascript">
+    function checkPasscode() {
+      // Reverse engineerable, no? But if you figured it out, you're not the one this is for.
+      var inp = document.getElementById("passcodeBox").value;
+      var p = 8191;
+      var mod = 1e9 + 7;
+      const a = [1, 0, 0, 0, 0, 0];
+      for (let i = 0; i < 5; i++) {
+          a[i + 1] = (a[i] * p + (inp[i])) % mod;
+      }
+      if (a[5] === 420772582) { //472675
+          document.getElementById("content").style.display = "block";
+          document.getElementById("passcodeForm").style.display = "none";
+      } else {
+          alert("Incorrect Passcode!");
+      }
+    }
+</script>
