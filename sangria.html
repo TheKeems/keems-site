@@ -8,15 +8,15 @@
   </head>
   <nav class="navbar">
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="news.html">Projects</a></li>
-        <li><a href="contact.html">PLACEHOLDER</a></li>
-        <li><a href="sangria.html">👁️</a></li>
+        <li><a href="index">Home</a></li>
+        <li><a href="news">Projects</a></li>
+        <li><a href="contact">PLACEHOLDER</a></li>
+        <li><a href="sangria">👁️</a></li>
     </ul>
   </nav>
   <body>
     <h1>TheKeems's Page</h1>
-    <p class="sangrara">If you don't know what's next, then you shouldn't be here.</p>
+    <p class="sangrara">If you don't know what to put, then you shouldn't be here.</p>
     <div id="passcodeForm" class = "center">
         <pspt for="passcodeBox">Enter Passcode:</pspt>
         <input type="password" id="passcodeBox" />
@@ -25,13 +25,12 @@
 
     <div id="content" style="display: none;">
         <h1>Nothing's here yet...</h1>
-        <p>But why are you anyways?</p>
+        <p>But why are you here anyways?</p>
     </div>
   </body>
 </html>
 <script type="text/javascript">
     function checkPasscode() {
-      // Reverse engineerable, no? But if you figured it out, you're not the one this is for.
       var inp = document.getElementById("passcodeBox").value;
       var p = 8191;
       var mod = 1e9 + 7;
