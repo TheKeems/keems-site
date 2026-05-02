@@ -44,7 +44,7 @@ h1 {
 }
 
 .sangrara {
-  color: rgb(255, 255, 255);
+  color: #a7e1fc;
   font-family: 'PrescriptFont', consolas;
   font-size: 45px;
   text-align: center;
@@ -55,14 +55,14 @@ h1 {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #000000;
   display: flex;
   justify-content: space-around;
 }
 
 .navbar li a {
   display: block;
-  color: white;
+  color: #a7e1fc;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
