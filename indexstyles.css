@@ -58,6 +58,20 @@ h1 {
   background-color: #000000;
   display: flex;
   justify-content: space-around;
+   -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
 }
 
 .navbar li a {
